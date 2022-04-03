@@ -16,8 +16,8 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <a href="#" class="navbar-brand">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <a href="#landing" class="navbar-brand">
           <img
             src="./svgs/croatia.svg"
             alt="croatia-logo"
@@ -39,20 +39,20 @@
         <div class="collapse navbar-collapse" id="toggleMobileMenu">
           <ul class="navbar-nav ms-auto text-center">
             <li>
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#products">Products</a>
             </li>
             <li>
-              <a class="nav-link" href="#">Something</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
       <!--LANDING PAGE-->
       <!--Ovdje radi landing page (navigation napravljen)-->
-      <div class="landing-page">
+      <div id="landing" class="landing-page">
         <h1>Landing page</h1>
       </div>
       <!--CAROUSEL - BOOTSTRAP-->
@@ -63,7 +63,7 @@
       >
         <h3>Dodaj ovdje neki tekst nesto</h3>
         <p>fake opis neki ili nesto sta ti je volja</p>
-        <div class="carousel-inner">
+        <div id="gallery" class="carousel-inner">
           <div class="carousel-item active">
             <img
               onclick="expandPicture(this)"
@@ -195,12 +195,12 @@
         />
       </div>
       <!--JAVASCRIPT ARRAY USAGE-->
-      <div class="array-container">
+      <div id="products" class="array-container">
         <h4>Coffee brands that we use</h4>
         <div class="array-options"></div>
       </div>
       <!--CONTACT FORM-->
-      <div class="contact-form">
+      <div id="contact" class="contact-form">
         <form
           action="mailto:someone@example.com"
           method="post"

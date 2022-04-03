@@ -12,14 +12,14 @@
 .navbar {
   height: 4rem;
   z-index: 100;
-  background: rgba(20, 5, 235, 0.6);
+  background: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
   transition: 0.2s;
 }
 
 .navbar:hover {
-  background: rgba(20, 5, 235, 1);
+  background: rgb(255, 255, 255);
 }
 .navbar a {
   margin: 0 1.6rem;
@@ -121,9 +121,6 @@ input {
   color: rgba(136, 136, 136, 0.932);
   font-size: 1rem;
   padding-left: 0.3rem;
-}
-
-.button-submit {
 }
 
 @keyframes zoom {
