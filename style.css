@@ -3,11 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+.container-fluid {
   /*"vh" je viewport height i 100vh je tvoj ekran cijeli. Slobodno pogledaj malo "vh" i "vw" jer su fora za koristiti. Onda sam oduzeo 100vh sa velicinom navbara, a stavio sam navbar da je 4rem */
   min-height: calc(100vh - 4rem);
   /* Navbar je fixan (pise u HTMLu pod <nav fixed-top, pomocu bootstrapa)>  a kad je fixan onda ne zauzima prostor i zato moram maknuti sav landing page prema dolje za visinu navbara. Ako hoces obrisi ovaj kod i i vidi sta je drukcije, bit ce jasno. */
-  margin-top: 4rem;
 }
 .navbar {
   height: 4rem;
@@ -30,24 +29,26 @@
   font-weight: 500;
 }
 
-.landing-page {
-  border-bottom: 1px solid #000;
-  /*ovu crtu cemo obrisati ali neka ti bude orjentir da landing page mora biti 100vh i da crta ne ide ni gore ni dolje dok radis tu */
-  min-height: calc(100vh - 4rem);
-  background-image: url(./images/coffe.jpg);
-  background-size: contain;
-  color:blanchedalmond;
-  text-align: center;
+.landing-page img {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 4rem;
 }
-
 
 .d-block {
   height: 70vh;
   cursor: pointer;
 }
 
-.carousel {
+.carousel-container {
   margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-control-next {
+  height: 100%;
 }
 
 #modal {
@@ -86,8 +87,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 1rem;
-  gap: 0.8rem;
+  padding: 1rem 5rem 0 5rem;
+  gap: 1rem;
   margin-bottom: 10rem;
   flex-wrap: wrap;
 }
