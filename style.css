@@ -34,7 +34,12 @@
   border-bottom: 1px solid #000;
   /*ovu crtu cemo obrisati ali neka ti bude orjentir da landing page mora biti 100vh i da crta ne ide ni gore ni dolje dok radis tu */
   min-height: calc(100vh - 4rem);
+  background-image: url(./images/coffe.jpg);
+  background-size: contain;
+  color:blanchedalmond;
+  text-align: center;
 }
+
 
 .d-block {
   height: 70vh;
