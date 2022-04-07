@@ -8,9 +8,29 @@
   min-height: calc(100vh - 4rem);
   /* Navbar je fixan (pise u HTMLu pod <nav fixed-top, pomocu bootstrapa)>  a kad je fixan onda ne zauzima prostor i zato moram maknuti sav landing page prema dolje za visinu navbara. Ako hoces obrisi ovaj kod i i vidi sta je drukcije, bit ce jasno. */
 }
+
+.landing-page {
+  background-image: url('./images/LandingPhoto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1345px) {
+  .landing-page {
+    background-image: url('./images/LandingPhotoMobile.jpg');
+    margin-top: 4rem;
+    background-size: contain;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
 .navbar {
   height: 4rem;
-  z-index: 100;
   background: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
@@ -20,6 +40,21 @@
 .navbar:hover {
   background: rgb(255, 255, 255);
 }
+
+@media only screen and (max-width: 991px) {
+  .collapse {
+    background: rgba(255, 255, 255);
+  }
+}
+
+.collapse li a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav li a {
+  margin: 2rem 0;
+}
+
 .navbar a {
   margin: 0 1.6rem;
   font-size: 1.2rem;

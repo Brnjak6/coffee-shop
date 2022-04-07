@@ -2,7 +2,13 @@ let modal = document.getElementById('modal');
 let modalImage = document.getElementById('modal-image');
 let closeButton = document.querySelector('.close');
 const arrayOptions = document.querySelector('.array-options');
-const coffees = ['Homemade blends', 'Jubilarna', 'barcaffe', 'Lavazza', 'Jacobs',];
+const coffees = [
+  'Homemade blends',
+  'Jubilarna',
+  'barcaffe',
+  'Lavazza',
+  'Jacobs',
+];
 
 function expandPicture(e) {
   modal.style.display = 'flex';
