@@ -11,6 +11,41 @@ function closeModal() {
   modal.style.display = 'none';
 }
 
+function checkboxValues() {
+  
+  let roast1 = document.getElementById("dark");
+  let roast2 = document.getElementById("mediumRoast");
+  let roast3 = document.getElementById("light");
+  let flavour1 = document.getElementById("chocolate");
+  let flavour2 = document.getElementById("citrus");
+  let flavour3 = document.getElementById("fruity");
+  let effect1 = document.getElementById("wake");
+  let effect2 = document.getElementById("keep");
+  let effect3 = document.getElementById("chill");
+
+  if (roast1.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect1.checked==true) {
+    alert("We recommend our Brazilian blend 80% robusta double espresso called DARK RIO");
+  }
+  else if(roast1.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect2.checked==true) {
+    alert("We recommend our Kenyan blend 65% robusta latte called BUSHMANS MARATHON");
+  }
+  else if (roast2.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect1.checked==true) {
+  alert("We recommend our Guatemalan blend 50% arabica single espersso called ALARM BELL");
+} 
+else if (roast2.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect2.checked==true) {
+  alert("We recommend our Ethiopian blend 60% robusta flath white called DISEL POWER");
+} 
+else if (roast3.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect1.checked==true) {
+  alert("We recommend our Colombian blend 65% robusta latte called LIGHT AT THE END OF TUNEL");
+} 
+else if (roast3.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect3.checked==true) {
+  alert("We recommend our Brazilian blend 100% arabica cappuccino called COPACABANA SUNRISE");
+} 
+else {
+  alert("We recommend our Honduras blend 50% arabica cappuccino called BREAKING BEANS ");
+}
+}
+
 function sendEmail(e) {
   if (document.emailForm.name.value === '') {
     e.preventDefault();
