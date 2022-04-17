@@ -30,10 +30,10 @@ function checkboxValues() {
     alert("We recommend our Kenyan blend 65% robusta latte called BUSHMANS MARATHON");
   }
   else if (roast2.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect1.checked==true) {
-  alert("We recommend our Guatemalan blend 50% arabica single espersso called ALARM BELL");
+  alert("We recommend our Guatemalan blend 50% arabica single espresso called ALARM BELL");
 } 
 else if (roast2.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect2.checked==true) {
-  alert("We recommend our Ethiopian blend 60% robusta flath white called DISEL POWER");
+  alert("We recommend our Ethiopian blend 60% robusta flath white called DIESEL POWER");
 } 
 else if (roast3.checked==true && (flavour1.checked==true || flavour2.checked==true || flavour3.checked==true) && effect1.checked==true) {
   alert("We recommend our Colombian blend 65% robusta latte called LIGHT AT THE END OF TUNEL");
@@ -63,4 +63,11 @@ function sendEmail(e) {
     return false;
   }
   return true;
+}
+
+function sendComment() {
+  document.getElementById("demo").innerHTML = document.getElementById("fname").value;
+  document.getElementById("fname").value = "";
+  document.getElementById("demo2").innerHTML = document.getElementById("rcomment").value; 
+  document.getElementById("rcomment").value = "";
 }
