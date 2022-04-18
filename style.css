@@ -282,6 +282,18 @@ h2 {
   height: 5rem;
 }
 
+.review-form {
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10rem;
+}
+
+.review-form {
+  margin-left: 0;
+  justify-content: center;
+}
+
 footer {
   height: 5rem;
   background: rgb(110, 65, 29);
