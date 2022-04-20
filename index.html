@@ -337,27 +337,40 @@
       <h2>Review</h2>
       <div id="review" class="review-form">
         <form>
-          <label for="fname">Name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="rcomment">Comment:</label><br />
-          <input type="text" id="rcomment" class="comment-form" /><br /><br />
-          <input type="submit" value="Submit" onclick="sendComment()" />
+          <label>Name:</label><br />
+          <input type="text" name="fname" id="fname"  /><br />
+          <label >Comment:</label><br />
+          <input type="text" name="rcomment" id="rcomment" class="comment-form" /><br /><br />
+          <input type="submit" value="Submit" onclick="sendComment()" class="btn btn-suggest"/>
         </form>
       </div>
-      <div>
+      
+      <div class="comm">
         <p id="demo"></p>
         <p id="demo2"></p>
+        <hr>
         <p>Tamara </p>
         <p>
-          Hiden gem! great coffee, amazing staff and reasonably priced. I can
+          Hiden gem! Great coffee, amazing staff and reasonably priced. I can
           highly recommend it!
         </p>
+        <hr>
         <br />
         <p>John </p>
         <p>
           You just have to try out their blends! What they are doing with coffee
           blends is a pure art form!
         </p>
+        <hr>
+      </div>
+
+      <div id="sponsors">
+        <h5>Click the button to see our sponsors</h5>
+         <br />
+         <button onclick="sponsors()" class="btn btn-suggest">See sponsors</button> 
+        <br />
+        <br>
+        <p id="sponsorsPH"></p>
       </div>
 
       <div>

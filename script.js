@@ -66,8 +66,15 @@ function sendEmail(e) {
 }
 
 function sendComment() {
-  document.getElementById("demo").innerHTML = document.getElementById("fname").value;
+  document.getElementById("demo").innerHTML += document.getElementById("fname").value;
   document.getElementById("fname").value = "";
-  document.getElementById("demo2").innerHTML = document.getElementById("rcomment").value; 
+  document.getElementById("demo2").innerHTML += document.getElementById("rcomment").value; 
   document.getElementById("rcomment").value = "";
+}
+
+function sponsors() {
+  let sponsors = ["JavaCoffe", "Jubilarna", "NCI"];
+  for(i = 0; i < sponsors.length; i++) {
+    document.getElementById("sponsorsPH").innerHTML += (sponsors[i] + ", ");
+  }
 }
