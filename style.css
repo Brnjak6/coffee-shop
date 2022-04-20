@@ -283,7 +283,7 @@ h2 {
 }
 
 .review-form {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   display: flex;
   justify-content: flex-start;
   margin-left: 10rem;
@@ -293,6 +293,23 @@ h2 {
   margin-left: 0;
   justify-content: center;
 }
+
+.comm{
+  border-style: inset;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+#sponsors {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  color: rgba(136, 136, 136, 0.932);;
+}
+
 
 footer {
   height: 5rem;
